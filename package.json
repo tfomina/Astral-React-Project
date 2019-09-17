@@ -1,0 +1,21 @@
+{
+  "name": "react-project",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "start": "webpack"
+  },
+  "author": "Tatyana Fomina",
+  "browserslist": [
+    "last 2 version, not dead, ie >= 11"
+  ],
+  "devDependencies": {},
+  "dependencies": {},
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  }
+}
