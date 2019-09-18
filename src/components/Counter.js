@@ -11,6 +11,7 @@ class Counter extends Component {
 
     this.increaseCounter = this.increaseCounter.bind(this);
     this.decreaseCounter = this.decreaseCounter.bind(this);
+    this.resetCounter = this.resetCounter.bind(this);
   }
 
   increaseCounter() {
@@ -25,6 +26,12 @@ class Counter extends Component {
     });
   }
 
+  resetCounter() {
+    this.setState({
+      number: 0
+    });
+  }
+
   render() {
     const { number } = this.state;
     return (
@@ -34,6 +41,7 @@ class Counter extends Component {
         <div>
           <button onClick={this.increaseCounter}>Увеличить</button>
           <button onClick={this.decreaseCounter}>Уменьшить</button>
+          <button onClick={this.resetCounter}>Сбросить</button>
         </div>
       </>
     );
